@@ -4,8 +4,8 @@ flg=$1
 
 if [ -z "$flg" ]; then
 	echo " "
-	echo "airdrop: prepare your mac to recieive via AirDrop"
-	echo " Useage:"
+	echo "airdrop: prepare your mac to receive via AirDrop"
+	echo " Usage:"
 	echo " $ airdrop 1 ( turns on wifi and bluetooth, opens ~/Downloads in Finder )"
 	echo " $ airdrop 0 ( turns off just bluetooth, because I'm guessing you're always online )"
 	echo " "
