@@ -11,13 +11,13 @@ if [ -z "$flg" ]; then
 	echo " "
 elif [ "$flg" == 1 ]; then
 	networksetup -setairportpower en1 on
-	blueutil power 1
-	open /Users/gmaganna/Downloads
+	blueutil -p 1 -d 1
+	open /Users/"$(whoami)"/Downloads
 	echo " "
 	echo "AirDrop Ready!"
 	echo " "
 elif [ "$flg" == 0 ]; then
-	blueutil power 0
+	blueutil -p 0 -d 0
 	echo " "
 	echo "AirDrop off (bluetooth off)"
 	echo " "
@@ -30,6 +30,8 @@ fi
 ##################################
 # PLEASE DO NOT REMOVE THIS NOTICE
 # Script written by Gustavo Magaña
+#
+# https://github.com/gmagannaDevelop/airdrop
 #
 # * This script needs the utility 'blueutil' to be installed
 #   a priori. It can be installed via homebrew:
