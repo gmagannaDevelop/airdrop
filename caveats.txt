@@ -1,0 +1,9 @@
+I have not yet found a way to find which language is being used for an specific user.
+
+MacOS does not properly set the locale when starting the terminal, i.e. the 
+LANG variable is always unset, empty.
+
+Thus airdrop utility script should be adapted to the names of possible users on 
+a system and the corresponding menu icon name on the language they are using
+
+Any help on how to solve this issue would be appreciated.
